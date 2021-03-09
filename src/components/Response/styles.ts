@@ -7,6 +7,6 @@ export const Wrapper = styled.div`
 `;
 
 export const ResponseText = styled.h4`
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: #f1fff4
 `;
