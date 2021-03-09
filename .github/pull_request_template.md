@@ -6,6 +6,10 @@
 
 <!-- Demonstrações da funcionalidade -->
 
+## Testando funcionalidade
+
+<!-- Demonstrações da funcionalidade -->
+
 ## Foi testado nos Navegadores
 
 - [ ] Safari
