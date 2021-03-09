@@ -8,7 +8,7 @@
 
 ## Foi testado nos Navegadores
 
-[ ] Safari
-[ ] Mozilla
-[ ] Chrome
-[ ] Edge
+- [ ] Safari
+- [ ] Mozilla
+- [ ] Chrome
+- [ ] Edge
