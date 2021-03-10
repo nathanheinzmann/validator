@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { validator } from '../../utils';
 import { Wrapper } from './styles';
 
 
@@ -6,7 +7,9 @@ const Input = () => {
 
   const [varName, setVarName] = useState("exemplo");
 
-  const handleClick = () => {  }
+  const handleClick = () => { 
+    validator(varName);
+   }
 
   return(
     <Wrapper>
