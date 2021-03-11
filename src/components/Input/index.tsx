@@ -1,24 +1,18 @@
-import React, { useState } from 'react';
-import { validator } from '../../utils';
+import { useContext } from 'react';
 import { Wrapper } from './styles';
+import ValueInsertedContext from '../../contexts/ValueInserted'
 
 
 const Input = () => {
-
-  const [varName, setVarName] = useState("exemplo");
-
-  const handleClick = () => { 
-    validator(varName);
-   }
+  const { handleChangeValue, value } = useContext(ValueInsertedContext);
 
   return(
     <Wrapper>
       <label><strong>Nome</strong></label>
       <input
-        onChange={({target})=> setVarName(target.value)} 
-        value={varName} type="text"
+        onChange={({target})=> handleChangeValue(target.value)} 
+        value={value} type="text"
         placeholder="Nome da variável."/>
-      <button onClick={handleClick}>Testar</button>
     </Wrapper>
   );
 }

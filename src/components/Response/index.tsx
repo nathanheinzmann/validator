@@ -1,14 +1,21 @@
-import React from 'react';
-import { ResponseText, Wrapper } from './styles';
+import React, { useContext } from 'react';
+import { InsertedText, ResponseText, Wrapper } from './styles';
+import ValueInsertedContext from '../../contexts/ValueInserted';
+import { validator } from '../../utils'
 
-type ResponseProps = {
-  children?: string | JSX.Element;
-}
+const Response: React.FC = () => {
+  const { value } = useContext(ValueInsertedContext);
 
-const Response: React.FC<ResponseProps> = ({ children }) => {
+  const handleValidate = () => validator(value) ? "Perfeito! ✅" : "Algo de errado não está certo... 🤔";
+
   return(
     <Wrapper>
-      <ResponseText>{children}</ResponseText>
+      <InsertedText>
+        {value || "Insira algum texto"}
+      </InsertedText>
+      <ResponseText>
+        {handleValidate()}
+      </ResponseText>
     </Wrapper>
   );
 }
