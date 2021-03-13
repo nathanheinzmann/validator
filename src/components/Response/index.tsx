@@ -6,7 +6,7 @@ import { validator } from '../../utils'
 const Response: React.FC = () => {
   const { value } = useContext(ValueInsertedContext);
 
-  const handleValidate = () => validator(value) ? "Perfeito! ✅" : "Algo de errado não está certo... 🤔";
+  const handleValidate = () => validator(value) ? "Nome válido ✅" : "Nome inválido 🤔";
 
   return(
     <Wrapper>
