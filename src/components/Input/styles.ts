@@ -1,30 +1,30 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  background-color: #E8833A;
-  border-radius: 20px;
-  padding: 20px 30px;
-  border-radius: 10px;
-  padding: 20px 30px;
   display: flex;
   flex-direction: column;
-
+  margin: 0 25% 0 25%;
+  
   > label{
     margin: 10px 0;
+    color: #3a3a3a;
+    text-align: justify;
+    font-size: 1.8rem;
+    
   }
 
   > input{
-    border-radius: 10px;
-    margin: 10px 0;
-    padding: 3px;
+    border-radius: 5px;
     background-color: #f1fff4;
     outline: 0;
+    max-width: 500px;
+    margin: 10px 0;
+    height: 1.8rem;
+
   }
 
   > button{
     border-radius: 10px;
-    margin: 10px 0;
-    padding: 3px;
     background-color: #f1fff4;
   }
 `;

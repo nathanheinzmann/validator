@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import { Input, Response, Rules } from './components';
 import { ValueInsertedProvider } from './contexts';
 
