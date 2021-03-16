@@ -2,8 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   background-color: #ffffff;
-  text-align: justify;
-  margin: 0 25% 0 25%;
+  text-align: center;
   
 `;
 
@@ -14,6 +13,11 @@ export const Title = styled.h1`
 `;
 
 export const RulesText = styled.p`
-  font-size: 1rem;
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+    margin: 0 2%;
+  }
+  font-size: 1.5rem;
+
   color: #3a3a3a
 `;
