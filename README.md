@@ -1,6 +1,6 @@
 # Name Validator
 
-a small project made to test regular expressions with RegEx
+A small project made to test regular expressions with RegEx.
 
 ## Rules for the name to be allowed:
  - Start with a vowel;
