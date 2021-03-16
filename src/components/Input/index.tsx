@@ -8,7 +8,6 @@ const Input = () => {
 
   return(
     <Wrapper>
-      <label><strong>Nome</strong></label>
       <input
         onChange={({target})=> handleChangeValue(target.value)} 
         value={value} type="text"
