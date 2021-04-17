@@ -21,4 +21,4 @@ A small project made to test regular expressions with RegEx.
  - 222
 
 
-Access the deployment of this app through the [LINK](https://validator-nathan.netlify.app/) and have fun!.
+Access the deployment of this app through the [LINK](https://validator-iota.vercel.app/) and have fun!.
